@@ -1,0 +1,42 @@
+.sidepanel {
+    display: flex;
+    top: 230px;
+    left: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    height: 340px;
+    &__devider {
+        width: 2px;
+        height: 70px;
+        background-color: #fff;
+        &_active {
+            background-color: #000;
+        }
+    }
+    &__text {
+        height: 150px;
+        width: 25px;
+        color: #fff;
+        &_active {
+            color: #000;
+        }
+        span {
+            transform: rotate(-90deg) translate(-40%, -265%);
+            display: block;
+            width: 150px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__link {
+        &_active {
+            path {
+                fill: #000;
+            }
+        }
+    }
+}
