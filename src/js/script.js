@@ -29,9 +29,9 @@ $(document).ready(function(){
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 300) {
-            $('.sidepanel__devider').toggleClass('sidepanel__devider_active');
-            $('.sidepanel__link').toggleClass('sidepanel__link_active');
-            $('.sidepanel__text').toggleClass('sidepanel__text_active');
+            $('.sidepanel__devider').addClass('sidepanel__devider_active');
+            $('.sidepanel__link').addClass('sidepanel__link_active');
+            $('.sidepanel__text').addClass('sidepanel__text_active');
         } else {
             $('.sidepanel__devider').removeClass('sidepanel__devider_active');
             $('.sidepanel__link').removeClass('sidepanel__link_active');
